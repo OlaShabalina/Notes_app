@@ -28,6 +28,7 @@ const generateNote = function (note) {
     const noteEl = document.createElement('div');
     const noteButton = document.createElement('button');
     const noteText = document.createElement('span');
+    const noteEditLink = document.createElement('a');
 
     // set up the remove note button
     noteButton.textContent = 'x'
@@ -42,10 +43,16 @@ const generateNote = function (note) {
     if (note.title.length > 0) {
         noteText.textContent = note.title;
     } else {
-        noteText.textContent = "Unnamed note";
+        noteText.textContent = " Unnamed note ";
     };
 
     noteEl.appendChild(noteText);
+
+    // setting up link to edit page
+
+    noteEditLink.setAttribute('href', `/edit.html#${note.id}`);
+    noteEditLink.textContent = 'edit';
+    noteEl.appendChild(noteEditLink);
 
     return noteEl;
 }
