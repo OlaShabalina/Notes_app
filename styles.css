@@ -1,0 +1,28 @@
+/* styling dynamic part of the app */
+#notes {
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+
+#notes div {
+    padding-bottom: 10px;
+}
+
+#notes button {
+    background: none;
+    border: none;
+    padding-right: 5px;
+    vertical-align: text-top;
+}
+
+#notes a {
+    margin-left: 5px;
+    color: #FF9100;
+    font-style: italic;
+}
+
+#filter-by {
+    display: block;
+}
+
+

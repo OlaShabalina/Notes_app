@@ -120,3 +120,4 @@ const renderNotes = (notes, filters) => {
 const generateLastEdited = (timestamp) => {
     return  `Last edited: ${moment(timestamp).fromNow()}`;
 };
+

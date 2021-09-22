@@ -7,6 +7,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
+    <link rel="stylesheet" href="styles.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     <title>Document</title>
 </head>
@@ -20,21 +21,20 @@
                 <div class="col s12">
                     <div class="card blue-grey darken-1">
                         <div class="card-content white-text">
-                            <span class="card-title">Your notes:</span>
-                            <input id="search-text" type="text" placeholder="Filter notes">
-                            <select id="filter-by">
-                                <option value="byEdited">Sort by last edited</option>
-                                <option value="byCreated">Sort by recently created</option>
-                                <option value="alphabetical">Sort alphabetically</option>
-                            </select>
+                            <span class="card-title center-align">Your notes list</span>
+                            <input id="search-text" type="text" placeholder="Please type your keywords to find a note">
+                            <div class="input-field col s12">
+                                <select id="filter-by">
+                                    <option value="" disabled selected>Sort notes by:</option>
+                                    <option value="byEdited">Sort by last edited</option>
+                                    <option value="byCreated">Sort by recently created</option>
+                                    <option value="alphabetical">Sort alphabetically</option>
+                                </select>
+                            </div>
                             <div id="notes">
                                 <!-- notes will be generated dynamically -->
                             </div>
-                            <button class="btn waves-effect waves-light orange accent-3" id="create-note">Create note</button>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                            <a href="#">This is a link</a>
+                            <a class="btn waves-effect waves-light orange accent-3" id="create-note">Create note</a>
                         </div>
                     </div>
                 </div>
