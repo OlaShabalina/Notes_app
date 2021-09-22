@@ -42,7 +42,8 @@ const generateNote = (note) => {
     if (note.title.length > 0) {
         noteText.textContent = note.title;
     } else {
-        noteText.textContent = "Unnamed note";
+        note.title = "Unnamed note"
+        noteText.textContent = note.title;
     };
 
     noteEl.appendChild(noteText);
