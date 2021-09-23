@@ -25,4 +25,10 @@
     display: block;
 }
 
+#note-body {
+    margin-bottom: 15px;
+}
 
+#remove-note {
+    margin-right: 10px;
+}
