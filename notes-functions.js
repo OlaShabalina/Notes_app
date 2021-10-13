@@ -50,7 +50,7 @@ const generateNote = (note) => {
 
     // setting up link to edit page
 
-    noteEditLink.setAttribute('href', `/edit.html#${note.id}`);
+    noteEditLink.setAttribute('href', `/edit#${note.id}`);
     noteEditLink.textContent = 'edit';
     noteEl.appendChild(noteEditLink);
 
