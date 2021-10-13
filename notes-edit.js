@@ -39,7 +39,7 @@ removeNoteButton.addEventListener('click', (e) => {
 });
 
 window.addEventListener('storage', (e) => {
-    if (e.key === 'notes') {
+    if (e.key === 'notes') { 
         notes = JSON.parse(e.newValue);
         note = notes.find((note) => note.id === noteId)
     };
